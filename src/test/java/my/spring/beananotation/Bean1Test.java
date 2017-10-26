@@ -12,9 +12,12 @@ public class Bean1Test extends ConfigTest {
 
     @Autowired
     private Bean1 bean1;
+    @Autowired
+    private Bean2 bean2;
 
     @Test
     public void test01(){
         bean1.mm();
+        bean2.out();
     }
 }
